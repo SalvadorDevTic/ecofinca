@@ -82,3 +82,14 @@ html {
   margin-bottom: 10px;
   background-color: #ff9776;
 }
+
+/* Estilos para modo oscuro */
+
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
