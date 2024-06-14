@@ -1,17 +1,16 @@
 ---
-title: "My First Blog Post"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Mi primer post"
 pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
-author: "Astro Learner"
+description: "Este es el primer post de mi blog de Astro."
+author: "Salvador Martinez"
 image:
   url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
+  alt: "Logo de Astro sobre fondo oscuro"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
 # Mi primera publicación en el blog
-
-Publicado el: 2024-06-14
 
 ¡Bienvenidos a mi _nuevo blog_ sobre cómo aprender Astro! Aquí, compartiré mi viaje de aprendizaje mientras construyo un nuevo sitio web.
 
