@@ -51,12 +51,12 @@ import logoPrincipal from "../images/Logo-PuraVida-principal.png";
 
   if (theme === "light") {
     document.documentElement.classList.remove("dark");
-    var element = document.querySelector("#logo-header");
-    element.setAttribute("src", logoPrincipal);
+    // var element = document.querySelector("#logo-header");
+    // element.setAttribute("src", logoPrincipal);
   } else {
     document.documentElement.classList.add("dark");
-    var element = document.querySelector("#logo-header");
-    element.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
+    // var element = document.querySelector("#logo-header");
+    // element.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
   }
 
   window.localStorage.setItem("theme", theme);
@@ -66,13 +66,13 @@ import logoPrincipal from "../images/Logo-PuraVida-principal.png";
     element.classList.toggle("dark");
 
     const isDark = element.classList.contains("dark");
-    if (isDark) {
-      var elementLogo = document.querySelector("#logo-header");
-      elementLogo.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
-    } else {
-      var elementLogo = document.querySelector("#logo-header");
-      elementLogo.setAttribute("src", logoPrincipal);
-    }
+    // if (isDark) {
+    //   var elementLogo = document.querySelector("#logo-header");
+    //   elementLogo.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
+    // } else {
+    //   var elementLogo = document.querySelector("#logo-header");
+    //   elementLogo.setAttribute("src", logoPrincipal);
+    // }
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
 
