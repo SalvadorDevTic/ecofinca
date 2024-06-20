@@ -57,23 +57,25 @@ html {
   display: unset;
 }
 
+.bg-index img {
+  top: 0px;
+  left: 0;
+  float: inline-start;
+  opacity: 0.6;
+  position: fixed;
+  width: 100%;
+  /* height: 200%; */
+  z-index: -2;
+  /* z-index: -10; */
+}
+
 
 
 @media screen and (min-width: 636px) {
   .h1-layout{
     padding-top: 150px;
   }
-  .bg-index img {
-    top: -10px;
-    left: 0;
-    float: inline-start;
-    opacity: 0.6;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    z-index: -2;
-    /* z-index: -10; */
-  }
+
   .nav-links {
     display: flex;
     justify-content: center;
@@ -177,6 +179,6 @@ html.dark .nav-links a{
   color: #fff;
 }
 
-.space-header{
-  margin-top: 120px;
+.bg-space-top{
+  margin-top: 420px;
 }

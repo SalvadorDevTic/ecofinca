@@ -1,18 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting";
+import HeroIndex from "../sections/HeroIndex.astro";
 const pageTitle = "Página de inicio";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <div class="bg-index">
-    <!-- <img src="/src/assets/images/landscape.jpg" alt="" /> -->
-    <div class="bg-space-top"></div>
-    <h1>Sostenibilidad en Armonía:</h1>
-    <h2>Permacultura y Agroecología para una Vida Más Rica</h2>
+    <img src="/src/images/landscape.jpg" alt="" />
+    <HeroIndex />
+    <HeroIndex />
+    <HeroIndex />
     <!-- COMPONENTE SIN HIDRATAR, BOTON NO FUNCIONA -->
     <!-- <Greeting messages={["Hola", "Qué tal", "Hola a todos"]} /> -->
     <!-- COMPONENTE HIDRATADO, BOTON FUNCIONA POR QUE LA DIRECTIVA LE DICE A ASTRO QUE EJECUTE JS EN EL LADO DEL CLIENTE-->
-    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+    <!-- <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} /> -->
   </div>
 </BaseLayout>
