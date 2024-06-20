@@ -52,14 +52,11 @@
   if (theme === "light") {
     document.documentElement.classList.remove("dark");
     var element = document.querySelector("#logo-header");
-    element.setAttribute(
-      "src",
-      "/src/assets/images/Logo-PuraVida-principal.png"
-    );
+    element.setAttribute("src", "/src/images/Logo-PuraVida-principal.png");
   } else {
     document.documentElement.classList.add("dark");
     var element = document.querySelector("#logo-header");
-    element.setAttribute("src", "/src/assets/images/EFPuraVida2FOscuro.png");
+    element.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
   }
 
   window.localStorage.setItem("theme", theme);
@@ -71,15 +68,12 @@
     const isDark = element.classList.contains("dark");
     if (isDark) {
       var elementLogo = document.querySelector("#logo-header");
-      elementLogo.setAttribute(
-        "src",
-        "/src/assets/images/EFPuraVida2FOscuro.png"
-      );
+      elementLogo.setAttribute("src", "/src/images/EFPuraVida2FOscuro.png");
     } else {
       var elementLogo = document.querySelector("#logo-header");
       elementLogo.setAttribute(
         "src",
-        "/src/assets/images/Logo-PuraVida-principal.png"
+        "/src/images/Logo-PuraVida-principal.png"
       );
     }
     localStorage.setItem("theme", isDark ? "dark" : "light");
